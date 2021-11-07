@@ -13,24 +13,41 @@ There were a couple of key differences between the refactored script versus the 
 ![image](https://user-images.githubusercontent.com/93381221/140629796-d3951a42-9495-4691-b2af-27cdb94debaa.png)
 
 As a result of this method, the For loops which were used to compute the Volume, Starting Price, and Ending Price contained arrays instead, and each array used the index variable to call the stock ticker. 
+
 ![image](https://user-images.githubusercontent.com/93381221/140629937-3c51c813-f564-4334-9a8c-77d6d002bf2d.png)
 
 This is different from the original script, which contained variables in the For loops and called the stock ticker using the iterator variable itself.
+
 ![image](https://user-images.githubusercontent.com/93381221/140629949-5e0c42d1-3cc7-4239-a3c6-1c81836c0a8d.png)
 
 
 From the completed analysis, we can see in 2017 that all but one of the stocks had a positive return on value. The only negative return was from TERP, while the rest of the stocks showed a significant increase in value – a few even greater than 100%.
+
 ![image](https://user-images.githubusercontent.com/93381221/140629908-e5de0b11-ae3d-4555-82d0-b854c30feca8.png)
 
 In 2018 on the other hand, we can see almost the exact opposite result. All but two of the stocks yield a negative return, and many of these decreases in value are over 20%. The two positive returns are very significant increases – over 80% for both.
+
 ![image](https://user-images.githubusercontent.com/93381221/140629916-c0921932-6129-40ee-8bf4-5b94aa223bea.png)
 
 
 Although the end result was the same for both years from both methods of VBA Script, there was a noticeable difference between the two methods in elapsed time for completing the analysis.
+
+2017 Original
+
 ![image](https://user-images.githubusercontent.com/93381221/140629840-73117285-031c-46b3-af57-737310a76707.png)
+
+2017 Refactored
+
 ![image](https://user-images.githubusercontent.com/93381221/140629843-0420f75f-164a-4c70-acde-561da7f729c7.png)
+
+2018 Original
+
 ![image](https://user-images.githubusercontent.com/93381221/140629846-cef9b106-1dff-43c6-b197-468705f4ab49.png)
+
+2018 Refactored
+
 ![image](https://user-images.githubusercontent.com/93381221/140629847-3f1e4b13-352f-4736-b280-ee88ebdef8c7.png)
+
 The analysis appears to take slightly longer using the refactored script, as opposed to the original one.
 
 
