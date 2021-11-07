@@ -9,12 +9,15 @@ This project entailed refactoring the VBA Script from the Green Stocks Analysis 
 Results: Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 
 There were a couple of key differences between the refactored script versus the original script. We computed Total Volumes as well as Starting & Ending Prices for each stock ticker, using arrays rather than variables. Additionally, we used an index variable called tickerIndex, in order to call the correct stock ticker.
+
 ![image](https://user-images.githubusercontent.com/93381221/140629796-d3951a42-9495-4691-b2af-27cdb94debaa.png)
 
 As a result of this method, the For loops which were used to compute the Volume, Starting Price, and Ending Price contained arrays instead, and each array used the index variable to call the stock ticker. 
 ![image](https://user-images.githubusercontent.com/93381221/140629937-3c51c813-f564-4334-9a8c-77d6d002bf2d.png)
 
-This is different from the original script, which contained variables in the For loops and called the stock ticker using the iterator variable itself.![image](https://user-images.githubusercontent.com/93381221/140629825-987d0352-62ff-441f-9241-0632ab3d86b8.png)
+This is different from the original script, which contained variables in the For loops and called the stock ticker using the iterator variable itself.
+![image](https://user-images.githubusercontent.com/93381221/140629949-5e0c42d1-3cc7-4239-a3c6-1c81836c0a8d.png)
+
 
 From the completed analysis, we can see in 2017 that all but one of the stocks had a positive return on value. The only negative return was from TERP, while the rest of the stocks showed a significant increase in value – a few even greater than 100%.
 ![image](https://user-images.githubusercontent.com/93381221/140629908-e5de0b11-ae3d-4555-82d0-b854c30feca8.png)
